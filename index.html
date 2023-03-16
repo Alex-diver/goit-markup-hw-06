@@ -353,6 +353,7 @@
 			</div>
 		</footer>
 		<!--/Footer-->
+		<!-- Mobal -->
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" data-modal-close class="modal-close">
@@ -360,8 +361,56 @@
 						<use href="./images/symbol-defs.svg#icon-Vector"></use>
 					</svg>
 				</button>
+				<h3 class="mobal-title">Leave your contacts and we will call you back</h3>
+				<form class="mobal-form form">
+					<div class="form-group">
+						<label class="label-form"
+							><span>Name</span>
+							<div class="form-control">
+								<input type="text" class="input-form" name="name" required maxlength="30" />
+								<svg class="form-icon" width="12px" height="12px">
+									<use href="./images/symbol-defs.svg#icon-Name"></use>
+								</svg>
+							</div>
+						</label>
+					</div>
+					<div class="form-group">
+						<label class="label-form"
+							><span>Phone</span>
+							<div class="form-control">
+								<input
+									type="phone"
+									class="input-form"
+									name="phone"
+									required
+									pattern="^\+[0-9]{3}\s\((\d+)\) \d{3}-\d{2}-\d{2}"
+								/>
+								<svg class="form-icon" width="13px" height="13px">
+									<use href="./images/symbol-defs.svg#icon-Phone"></use>
+								</svg>
+							</div>
+						</label>
+					</div>
+					<div class="form-group">
+						<label class="label-form"
+							><span>Email</span>
+							<div class="form-control">
+								<input type="email" class="input-form" name="email" required />
+								<svg class="form-icon" width="15px" height="12px">
+									<use href="./images/symbol-defs.svg#icon-Email"></use>
+								</svg>
+							</div>
+						</label>
+					</div>
+					<div class="form-group">
+						<label class="label-form"><span>Comment</span></label>
+						<textarea name="message" class="form-textarea" placeholder="Text input"></textarea>
+					</div>
+					<button type="submit" class="form-btn btn">Send</button>
+				</form>
 			</div>
 		</div>
+		<!-- /Mobal -->
 		<script src="./js/modal.js"></script>
 	</body>
 </html>
