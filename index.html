@@ -350,6 +350,22 @@
 						</li>
 					</ul>
 				</div>
+				<div class="footer-telegram">
+					<h3 class="footer-form">Subscribe</h3>
+					<form class="footer-email-form">
+						<label for="E-mail" class="label-form-email">
+							<div class="footer-email">
+								<input type="email" class="input-form-email" id="E-mail" name="email" placeholder="E-mail" required />
+								<button type="submit" class="footer-btn btn">
+									Subscribe
+									<svg class="email-vector" width="24px" height="20px">
+										<use href="./images/symbol-defs.svg#icon-icon-send"></use>
+									</svg>
+								</button>
+							</div>
+						</label>
+					</form>
+				</div>
 			</div>
 		</footer>
 		<!--/Footer-->
@@ -364,8 +380,8 @@
 				<h3 class="mobal-title">Leave your contacts and we will call you back</h3>
 				<form class="mobal-form form">
 					<div class="form-group">
-						<label class="label-form"
-							><span>Name</span>
+						<label class="label-form">
+							<span>Name</span>
 							<div class="form-control">
 								<input type="text" class="input-form" name="name" required maxlength="30" />
 								<svg class="form-icon" width="12px" height="12px">
@@ -405,6 +421,17 @@
 					<div class="form-group">
 						<label class="label-form"><span>Comment</span></label>
 						<textarea name="message" class="form-textarea" placeholder="Text input"></textarea>
+					</div>
+					<div class="form-group">
+						<input type="checkbox" class="form-checkbox visually-hidden" id="policy" name="policy" />
+						<label for="policy" class="form-label-checkbox">
+							<span>
+								<svg class="form-checkbox-icon" wibth="10px" height="8px">
+									<use href="./images/symbol-defs.svg#icon-check"></use>
+								</svg>
+							</span>
+							I accept the terms and conditions of the<a class="form-label-item" href="#">Privacy Policy</a>
+						</label>
 					</div>
 					<button type="submit" class="form-btn btn">Send</button>
 				</form>
